@@ -43,6 +43,3 @@ for students; and
 for children; and
 gift vouchers in")
 for the day came to .2f)")
-# Get the Category Of ticket the purchaser wants
-def ) :
-page l, last modified 03/01/22
