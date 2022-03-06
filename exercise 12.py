@@ -35,4 +35,23 @@ def main_routine():
     print("===================================================================")
     print(f"The total tickets sold today was {tickets_sold}\n"
           f"This is made up of; \n"
-          f"\t")
+          f"\t{adult_tickets} for adults; and \n"
+          f"\t{child_tickets} for children; and \n"
+          f"\t{student_tickets} for students; and \n"
+          f"\t{gift_tickets} for gift vouchers;\n")
+    print(f"Sales for the day come to ${total_sales:.2f}")
+    print("===================================================================")
+
+
+def sell_ticket():
+    ticket_type = input("what kind of ticket do you want?: /n"
+                        "\tA for Adult, or \n"
+                        "\tC for child, or \n"
+                        "\tS for Student, or \n"
+                        "\tG for Gift voucher\n"
+                        ">> ").upper()
+    return ticket_type
+
+
+def get_price(type_):
+    prices = 
