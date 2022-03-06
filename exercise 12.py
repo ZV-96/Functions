@@ -44,7 +44,7 @@ def main_routine():
 
 
 def sell_ticket():
-    ticket_type = input("what kind of ticket do you want?: /n"
+    ticket_type = input("what kind of ticket do you want?:"
                         "\tA for Adult, or \n"
                         "\tC for child, or \n"
                         "\tS for Student, or \n"
@@ -54,4 +54,11 @@ def sell_ticket():
 
 
 def get_price(type_):
-    prices = 
+    prices = [["A", 12.5], ["S", 9], ["C", 7], ["G", 0]]
+    for price in prices:
+        if price[0] == type_:
+            return price[1]
+
+
+print("begin code")
+main_routine()
