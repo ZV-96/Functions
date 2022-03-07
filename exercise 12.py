@@ -26,7 +26,7 @@ def main_routine():
                 student_tickets += num_tickets
             elif ticket == "C":
                 child_tickets += num_tickets
-            else:
+            elif ticket == "G":
                 gift_tickets += num_tickets
 
             ticket_wanted = input("\nDo you want to sell "
@@ -34,7 +34,8 @@ def main_routine():
 
     print("===================================================================")
     print(f"The total tickets sold today was {tickets_sold}\n"
-          f"This is made up of; \n"
+          f"This is made up of \n"
+          "\n"
           f"\t{adult_tickets} for adults; and \n"
           f"\t{child_tickets} for children; and \n"
           f"\t{student_tickets} for students; and \n"
@@ -44,11 +45,13 @@ def main_routine():
 
 
 def sell_ticket():
-    ticket_type = input("what kind of ticket do you want?:"
+    ticket_type = input("what kind of ticket do you want?: \n "
+                        "\n"
                         "\tA for Adult, or \n"
                         "\tC for child, or \n"
                         "\tS for Student, or \n"
                         "\tG for Gift voucher\n"
+                        "\n"
                         ">> ").upper()
     return ticket_type
 
@@ -60,5 +63,5 @@ def get_price(type_):
             return price[1]
 
 
-print("begin code")
+print("******************* Welcome to Zack Films *******************")
 main_routine()
