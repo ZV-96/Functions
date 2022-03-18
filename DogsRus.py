@@ -61,5 +61,19 @@ def calc_cost(number):
         main_function()
 
 
+def print_roll():
+    confirm = str(input("would you like to view the list(Y/N): ")).upper()
+    if confirm == "Y":
+        print(f"this is the list: {dog_list}")
+        main_function()
+    else:
+        main_function()
 
+
+def terminate_program():
+    confirm = str(input("Are you sure you want to quit(Y/N): ")).upper()
+    if confirm == "Y":
+        print("Thanks for using DogsRus today")
+    else:
+        main_function()
 
