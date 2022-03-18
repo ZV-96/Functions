@@ -34,4 +34,32 @@ def drop_off():
         main_function()
 
 
+def pick_up():
+    dog_pickup = str(input("What is the name of the dog you want to pick up"))
+    if dog_pickup in dog_list:
+        confirm = str(input("Confirm your choice(Y/N): ")).upper()
+        if confirm == "Y":
+            print(f"{dog_pickup} has been removed from the list")
+            dog_list.remove(dog_pickup)
+            main_function()
+        else:
+            main_function()
+    else:
+        print("dog name is not in list")
+        main_function()
+
+
+def calc_cost(number):
+    days = int(input("how many days are your dogs staying"))
+    rate = 22.50
+    cost = days*rate*number
+    confirm = str(input("Do you want to calculate the cost(Y/N): ")).upper()
+    if confirm == "Y":
+        print(f"Your cost for {days} days and {number} dogs is {cost}")
+        main_function()
+    else:
+        main_function()
+
+
+
 
