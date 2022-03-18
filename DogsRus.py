@@ -45,7 +45,7 @@ def pick_up():
         else:
             main_function()
     else:
-        print("dog name is not in list")
+        print("this dog name is not on the list")
         main_function()
 
 
@@ -64,7 +64,7 @@ def calc_cost(number):
 def print_roll():
     confirm = str(input("would you like to view the list(Y/N): ")).upper()
     if confirm == "Y":
-        print(f"this is the list: {dog_list}")
+        print(f"the list is: {dog_list}")
         main_function()
     else:
         main_function()
@@ -76,4 +76,9 @@ def terminate_program():
         print("Thanks for using DogsRus today")
     else:
         main_function()
+
+
+# Main Routine
+dog_list = []
+main_function()
 
